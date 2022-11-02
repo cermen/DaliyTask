@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!-- 서체 관련 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+
+            background-color: skyblue;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header > h1 {
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-<h1>첫 부분입니다.</h1>
+<div class="header">
+    <h1>할일 목록</h1>
+    <p>오늘의 할일을 체크해 보아요!</p>
+</div>
+<div class="main">
+
+</div>
 </body>
 </html>
