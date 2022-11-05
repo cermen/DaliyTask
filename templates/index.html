@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <!-- 서체 관련 링크 -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- 폰트 관련 링크 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
@@ -29,6 +33,33 @@
         .header > h1 {
             font-size: 30px;
         }
+
+        .main {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .mytask {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px lightgray solid;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mytask > * {
+            height: 50px;
+        }
+
+        .mytask > button {
+            margin-left: 15px;
+            width: 150px;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +68,10 @@
     <p>오늘의 할일을 체크해 보아요!</p>
 </div>
 <div class="main">
-
+    <div class="mytask">
+        <input id="task" class="form-control" type="text" placeholder="할 일을 입력하세요">
+        <button type="button" class="btn btn-outline-primary">기록하기</button>
+    </div>
 </div>
 </body>
 </html>
