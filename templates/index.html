@@ -36,15 +36,15 @@
 
         .main {
             width: 95%;
-            max-width: 700px;
+            max-width: 600px;
             margin: 20px auto;
         }
 
         .mytask {
-            width: 80%;
             margin: 20px auto;
             padding: 20px;
             border: 1px lightgray solid;
+            border-radius: 8px;
 
             display: flex;
             flex-direction: row;
@@ -60,6 +60,28 @@
             margin-left: 15px;
             width: 150px;
         }
+
+        #task-list {
+            border: 1px lightgray solid;
+            border-radius: 8px;
+        }
+
+        .main > li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin: 20px;
+        }
+
+        .main > li > p {
+            max-width: 75%;
+            font-size: 20px;
+            font-weight: 500;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
@@ -70,8 +92,22 @@
 <div class="main">
     <div class="mytask">
         <input id="task" class="form-control" type="text" placeholder="할 일을 입력하세요">
-        <button type="button" class="btn btn-outline-primary">기록하기</button>
+        <button type="button" class="btn btn-outline-primary">할 일 동록</button>
     </div>
+</div>
+<div class="main" id="task-list">
+    <li>
+        <p>첫 번째 할 일</p>
+        <button type="button" class="btn btn-outline-primary">완료!</button>
+    </li>
+    <li>
+        <p class="done">두 번째 할 일</p>
+        <button type="button" class="btn btn-outline-primary">완료!</button>
+    </li>
+    <li>
+        <p>세 번째 할 일</p>
+        <button type="button" class="btn btn-outline-primary">완료!</button>
+    </li>
 </div>
 </body>
 </html>
